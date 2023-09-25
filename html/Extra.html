@@ -1,0 +1,55 @@
+<html>
+    <style>
+        h1 {
+            color: rgb(255, 240, 246);
+            text-align: center;
+            font-family:fantasy;
+        }
+        p {
+            color: rgb(255, 240, 246);
+            text-align: center;
+            font-family: monospace;
+        }
+        img {
+            display: none;
+        }
+        h4 {
+            display: none;
+            color: rgb(255, 240, 246);
+            font-family: monospace;
+        }
+    </style>
+    <head>
+        <h1 style="font-size: xx-large;"> &#x2606; My beloved</h1>
+    </head>
+    <body style="background-color: chocolate;">
+        <center>
+            <div>
+                <img id="image" src="https://tuipied-my.sharepoint.com/personal/autthapinya_kum_dome_tu_ac_th/Documents/CS100/HTML%20with%20CSS/resources/extra-img1.jpg" width="300px" height="300px">
+                <h4 id="txt-1" style="font-size: larger;">My little meow meow</h4>
+                <img id="image2" src="https://tuipied-my.sharepoint.com/personal/autthapinya_kum_dome_tu_ac_th/Documents/CS100/HTML%20with%20CSS/resources/extra-img2.jpg" width="300px" height="300px">
+                <h4 id="txt-2" style="font-size: larger;">I want fluffy white thing in my life</h4>
+            </div>
+            <button style="background-color: rgb(255, 240, 246); font-family: monospace; width: 150px; height: 50px;" type="button" onclick="show()" id="btn1">&#x21E8; Neuvillette</button>
+            <button style="background-color: rgb(255, 240, 246); font-family: monospace; width: 150px; height: 50px;" type="button" onclick="show2()" id="btn2">&#x21E8; Jingyuan</button>
+        </center>
+    </body>
+    <script>
+        function show () {
+            document.getElementById('image')
+            .style.display = "block";
+            document.getElementById('txt-1')
+            .style.display = "block";
+            document.getElementById('btn1')
+            .style.display = "none";
+        }
+        function show2 () {
+            document.getElementById('image2')
+            .style.display = "block";
+            document.getElementById('btn2')
+            .style.display = "none";
+            document.getElementById('txt-2')
+            .style.display = "block";
+        }
+    </script>
+</html>
