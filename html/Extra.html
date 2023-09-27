@@ -1,44 +1,65 @@
 <html>
     <style>
-        h1 {
+        body{
+            background-color: chocolate;
+        }
+        #head {
             color: rgb(255, 240, 246);
             text-align: center;
             font-family:fantasy;
+            font-size: xx-large;
+            margin-top: 50px;
         }
-        p {
+        #content1 {
+            color: rgb(255, 240, 246);
+            text-align: center;
+            font-family: monospace;
+        }
+        #content2 {
             color: rgb(255, 240, 246);
             text-align: center;
             font-family: monospace;
         }
         img {
             display: none;
+            margin-left: auto;
+            margin-right: auto;
         }
         h4 {
             display: none;
             color: rgb(255, 240, 246);
             font-family: monospace;
+            font-size: larger;
         }
-    </style>
-    <head>
-        <h1 style="font-size: xx-large;"> &#x2606; My beloved</h1>
-    </head>
-    <body style="background-color: chocolate;">
-        <center>
+        #btn1{
+            background-color: rgb(255, 240, 246); 
+            font-family: monospace; 
+            width: 150px; 
+            height: 50px;
+            margin-left: auto;
+        }
+        #btn2{
+            background-color: rgb(255, 240, 246); 
+            font-family: monospace; 
+            width: 150px; 
+            height: 50px;
+        }
+        </style>
+        <div id="head"> &#x2606; My beloved</div>
             <div>
-                <img id="image" src="https://tuipied-my.sharepoint.com/personal/autthapinya_kum_dome_tu_ac_th/Documents/CS100/HTML%20with%20CSS/resources/extra-img1.jpg" width="300px" height="300px">
-                <h4 id="txt-1" style="font-size: larger;">My little meow meow</h4>
-                <img id="image2" src="https://tuipied-my.sharepoint.com/personal/autthapinya_kum_dome_tu_ac_th/Documents/CS100/HTML%20with%20CSS/resources/extra-img2.jpg" width="300px" height="300px">
-                <h4 id="txt-2" style="font-size: larger;">I want fluffy white thing in my life</h4>
+                <img id="image" src="../image/extra-img1.jpg" width="300px" height="300px">
+                <h4 id="content1">My little meow meow</h4>
+                <img id="image2" src="../image/extra-img2.jpg" width="300px" height="300px">
+                <h4 id="content2">I want fluffy white thing in my life</h4>
             </div>
-            <button style="background-color: rgb(255, 240, 246); font-family: monospace; width: 150px; height: 50px;" type="button" onclick="show()" id="btn1">&#x21E8; Neuvillette</button>
-            <button style="background-color: rgb(255, 240, 246); font-family: monospace; width: 150px; height: 50px;" type="button" onclick="show2()" id="btn2">&#x21E8; Jingyuan</button>
-        </center>
+            <button type="button" onclick="show()" id="btn1">&#x21E8; Neuvillette</button>
+            <button type="button" onclick="show2()" id="btn2">&#x21E8; Jingyuan</button>
     </body>
     <script>
         function show () {
             document.getElementById('image')
             .style.display = "block";
-            document.getElementById('txt-1')
+            document.getElementById('content1')
             .style.display = "block";
             document.getElementById('btn1')
             .style.display = "none";
@@ -48,7 +69,7 @@
             .style.display = "block";
             document.getElementById('btn2')
             .style.display = "none";
-            document.getElementById('txt-2')
+            document.getElementById('content2')
             .style.display = "block";
         }
     </script>
