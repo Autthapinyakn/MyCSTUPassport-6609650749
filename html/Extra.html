@@ -1,67 +1,36 @@
 <html>
-    <style>
-        body{
-            background-color: chocolate;
-        }
-        #head {
-            color: rgb(255, 240, 246);
-            text-align: center;
-            font-family:fantasy;
-            font-size: xx-large;
-            margin-top: 50px;
-        }
-        #content1 {
-            color: rgb(255, 240, 246);
-            text-align: center;
-            font-family: monospace;
-        }
-        #content2 {
-            color: rgb(255, 240, 246);
-            text-align: center;
-            font-family: monospace;
-        }
-        img {
-            display: none;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        h4 {
-            display: none;
-            color: rgb(255, 240, 246);
-            font-family: monospace;
-            font-size: larger;
-        }
-        #btn1{
-            background-color: rgb(255, 240, 246); 
-            font-family: monospace; 
-            width: 150px; 
-            height: 50px;
-            margin-left: auto;
-        }
-        #btn2{
-            background-color: rgb(255, 240, 246); 
-            font-family: monospace; 
-            width: 150px; 
-            height: 50px;
-        }
-        </style>
-        <div id="head"> &#x2606; My beloved</div>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet2.css">
+        <div class="head"> &#x2606; My beloved</div>
             <div>
-                <img id="image" src="../image/extra-img1.jpg" width="300px" height="300px">
-                <h4 id="content1">My little meow meow</h4>
-                <img id="image2" src="../image/extra-img2.jpg" width="300px" height="300px">
-                <h4 id="content2">I want fluffy white thing in my life</h4>
+                <a href="https://youtu.be/2vQTfeeyGSY?si=05WCJD41ER8UiSFO" target="_blank">
+                <img id="image" src="../image/extra-img1.jpg" width="300px" height="300px"></a>
+                <h4 class="content" id="txt1">My little meow meow</h4>
+                <a href="https://youtu.be/xE-RhT16VQM?si=_0EYoh8VvQScGmhq" target="_blank">
+                <img id="image2" src="../image/extra-img2.jpg" width="300px" height="300px"></a>
+                <h4 class="content" id="txt2">I want fluffy white thing in my life</h4>
+                <a href="https://www.youtube.com/watch?v=tTv9Pch1q9E" target="_blank">
+                <img id="image3" src="../image/extra-img3.jpg" width="300px" height="300px"></a>
+                <h4 class="content" id="txt3">uwu</h4>
             </div>
-            <button type="button" onclick="show()" id="btn1">&#x21E8; Neuvillette</button>
-            <button type="button" onclick="show2()" id="btn2">&#x21E8; Jingyuan</button>
+            <button type="button" onclick="show()" id="btn1" class="button"> Neuvillette</button>
+            <button type="button" onclick="show2()" id="btn2" class="button"> Jingyuan</button>
+            <button type="button" onclick="show3()" id="btn3" class="button"> Nurude Sasara</button>
     </body>
     <script>
         function show () {
             document.getElementById('image')
             .style.display = "block";
-            document.getElementById('content1')
+            document.getElementById('txt1')
             .style.display = "block";
             document.getElementById('btn1')
+            .style.display = "none";
+            document.getElementById('image2')
+            .style.display = "none";
+            document.getElementById('txt2')
+            .style.display = "none";
+            document.getElementById('image3')
+            .style.display = "none";
+            document.getElementById('txt3')
             .style.display = "none";
         }
         function show2 () {
@@ -69,8 +38,32 @@
             .style.display = "block";
             document.getElementById('btn2')
             .style.display = "none";
-            document.getElementById('content2')
+            document.getElementById('txt2')
             .style.display = "block";
+            document.getElementById('image')
+            .style.display = "none";
+            document.getElementById('txt1')
+            .style.display = "none";
+            document.getElementById('image3')
+            .style.display = "none";
+            document.getElementById('txt3')
+            .style.display = "none";
+        }
+        function show3 () {
+            document.getElementById('image3')
+            .style.display = "block";
+            document.getElementById('btn3')
+            .style.display = "none";
+            document.getElementById('txt3')
+            .style.display = "block";
+            document.getElementById('image2')
+            .style.display = "none";
+            document.getElementById('txt2')
+            .style.display = "none";
+            document.getElementById('image')
+            .style.display = "none";
+            document.getElementById('txt1')
+            .style.display = "none";
         }
     </script>
 </html>
