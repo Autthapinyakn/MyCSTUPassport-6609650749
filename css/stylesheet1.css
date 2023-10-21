@@ -1,10 +1,14 @@
     .header{
-        background-color: rgb(148, 174, 214);
-        font-size: 50px;
-        font-family: fantasy;
-        color: aliceblue;
-        height: 80px;
+        font-size: 6vw;
+        font-family: Garamond;
+        color: #313134;
+        text-align: end;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 6vw;
     }
+
+    /*Text css*/
     h1{
         color: rgb(205, 235, 229);
         text-align: center;
@@ -33,7 +37,6 @@
         font-size: x-large;
         text-align: center;
         margin-top: 20px;
-        margin-bottom: 0px;
     }
     .link{
         font-size: large; 
@@ -45,12 +48,95 @@
         font-family: monospace;
         text-align: center;
     }
-    body{
-        background-color: rgb(101, 137, 190);
-    }
-    .img{
+    .img1{
         display: block;
-        margin-left: auto;
+        margin-left: 10vw;
         margin-right: auto;
-        margin-top: 30px;
+        margin-top: 3vw;
+        width: 50vw;
+        height: 30vw;
+        float: left;
     }
+    .hide-content{
+        display:none;
+        font-size: 2vw;
+        font-family: monospace;
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+    .img1:hover + .hide-content{
+        display: inline-block;
+    }
+    /*end of text css*/
+
+    /*Navigate bar and dropdown*/
+.line{
+    width: 50vw;
+    height: 0.2vw;
+    background-color: #545456;
+    margin-left: 5vw;
+}
+.navigate-bar{
+    flex-wrap: wrap;
+    display: flex;
+    overflow: hidden;
+    background-color: transparent;
+    width: 80vw;
+    margin-left: 3.5vw;
+}
+.navigate-bar a{
+    float: left;
+    font-size: 3.5vw;
+    color: #313134;
+    text-align: center;
+    padding: 1.5vw 2vw;
+    text-decoration: none;
+    font-family: Garamond;
+}
+.actdrop{
+    float: left;
+    overflow: hidden;
+}
+.actdrop .dropbtn{
+    font-size: 3.5vw;
+    font-family: Garamond;
+    background-color: inherit;
+    padding: 1.5vw 2vw;
+    margin: 0;
+    color: #313134;
+    border: none;
+    outline: none;
+}
+.navigate-bar:hover .actdrop:hover .dropbtn{
+    background-color: rgb(190, 102, 102);
+    color: #f9f9f9;
+}
+.dropcontent{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 1.5vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropcontent a{
+    float: none;
+    color: black;
+    padding: 1.2vw 1.8vw;
+    display: block;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 2.5vw;
+}
+.dropcontent a:hover{
+    background-color: #ddd;
+}
+.actdrop:hover .dropcontent{
+    display: block;
+}
+/*End of navigate bar and dropdown css*/
+
+body{
+    background-color: #e2e2e4;
+    height: 80vw;
+}
