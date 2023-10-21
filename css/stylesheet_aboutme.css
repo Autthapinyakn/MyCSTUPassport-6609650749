@@ -52,9 +52,10 @@
     color: #ddd;
     font-size: 4vw;
     margin-top: auto;
-    margin-left: 5.5vw;
+    margin-left: 5vw;
     background-color: transparent;
     border: none;
+    font-family: georgia;
 }
 .link1:hover{
     background-color: rgb(190, 102, 102);
