@@ -7,7 +7,6 @@
         flex-wrap: wrap;
         margin-left: 6vw;
     }
-
     /*Text css*/
     h1{
         color: rgb(205, 235, 229);
@@ -53,8 +52,6 @@
         margin-left: 10vw;
         margin-right: auto;
         margin-top: 3vw;
-        width: 50vw;
-        height: 30vw;
         float: left;
     }
     .hide-content{
@@ -63,9 +60,6 @@
         font-family: monospace;
         margin-left: 5vw;
         margin-top: 5vw;
-    }
-    .img1:hover + .hide-content{
-        display: inline-block;
     }
     /*end of text css*/
 
@@ -139,4 +133,40 @@
 body{
     background-color: #e2e2e4;
     height: 80vw;
+}
+/*For desktop*/
+@media screen and (min-width: 1025px){
+    .img1{
+        width: 50vw;
+        height: 30vw;
+    }
+    .img1:hover + .hide-content{
+        display: inline-block;
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+}
+/*For smartphone*/
+@media screen and (max-width: 480px){
+    .img1{
+        width: 50vw;
+        height: 30vw;
+    }
+    .img1:hover + .hide-content{
+        display: inline-block;
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
+}
+/* Media Query for Tablets Ipads*/ 
+@media (min-width: 481px) and (max-width: 1024px){
+    .img1{
+        width: 50vw;
+        height: 30vw;
+    }
+    .img1:hover + .hide-content{
+        display: inline-block;
+        font-size: 3vw;
+        margin-left: 2vw;
+    }
 }

@@ -7,11 +7,7 @@
     margin-left: 6vw;
 }
 .img{
-    width: 30vw;
-    height: 30vw;
-    display: block;
     margin: auto;
-    margin-top: 3vw;
     position: relative;
     object-fit: cover;
     border-radius: 50%;
@@ -21,22 +17,17 @@
     margin-top: 3vw;
     margin: 3vw;
     height: 30vw;
+    width: 20vw;
 }
 .info-topic{
     font-family: georgia;
     color: #313134;
-    font-size: 4vw;
-    margin-top: 4vw;
-    margin-left: 5vw;
     float: left;
 }
 .info{
     display: inline-block;
     font-family: georgia;
     color: #313134;
-    font-size: 4vw;
-    margin-top: 4vw;
-    margin-left: 5vw;
 }
 .link1{
     display: block;
@@ -130,4 +121,78 @@
 
 body{
     background-color: #e2e2e4;
+}
+/*For desktop*/
+@media screen and (min-width: 1025px){
+        .info-bg{
+            width: 90%;
+            height: 25vw;
+            margin-left: 5vw;
+        }
+        .info-topic{
+            font-size: 3vw;
+            margin-left: 5vw;
+            margin-top: 4vw;
+        }
+        .info{
+            font-size: 3vw;
+            margin-left: 2vw;
+            margin-top: 4vw;
+        }
+        .img{
+            width: 20vw;
+            height: 20vw;
+            float: left;
+            margin-left: 10vw;
+            margin-top: 5vw;
+        }
+}
+/*For smartphone*/
+@media screen and (max-width: 480px){
+    .img{
+        width: 30vw;
+        height: 30vw;
+        margin-top: 5vw;
+        margin-left: 35%;
+    }
+    .info-bg{
+        width: 80%;
+        height: 30vw;
+        margin-left: 10%;
+    }
+    .info{
+        font-size: 3.5vw;
+        margin-left: 3vw;
+        margin-top: 5vw;
+    }
+    .info-topic{
+        font-size: 3.5vw;
+        margin-left: 6vw;
+        margin-top: 5vw;
+    }
+}
+/* Media Query for Tablets Ipads*/ 
+@media (min-width: 481px) and (max-width: 1024px){
+    .info-bg{
+        width: 90%;
+        height: 25vw;
+        margin-left: 5vw;
+    }
+    .info-topic{
+        font-size: 3vw;
+        margin-left: 5vw;
+        margin-top: 4vw;
+    }
+    .info{
+        font-size: 3vw;
+        margin-left: 2vw;
+        margin-top: 4vw;
+    }
+    .img{
+        width: 20vw;
+        height: 20vw;
+        float: left;
+        margin-left: 10vw;
+        margin-top: 5vw;
+    }
 }

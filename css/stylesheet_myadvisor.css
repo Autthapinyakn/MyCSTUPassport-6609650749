@@ -84,7 +84,6 @@ body{
     position: relative;
     object-fit: cover;
     border-radius: 50%;
-    float: left;
 }
 .info-bg{
     background-color: #f7f7f7;
@@ -92,21 +91,92 @@ body{
     margin-top: 3vw;
     height: 25vw;
     width: 50vw;
-    display: inline-block;
 }
 .info-topic{
     font-family: georgia;
     color: #313134;
     font-size: 3vw;
-    margin-top: 4vw;
-    margin-left: 3vw;
     float: left;
 }
 .info{
     display: inline-block;
     font-family: georgia;
     color: #313134;
+    margin-left: 5vw;
+}
+
+/*For desktop*/
+@media screen and (min-width: 1025px){
+    .info-bg{
+        width: 90%;
+        height: 25vw;
+        margin-left: 5vw;
+    }
+    .info-topic{
+        font-size: 3vw;
+        margin-left: 5vw;
+        margin-top: 4vw;
+    }
+    .info{
+        font-size: 3vw;
+        margin-left: 2vw;
+        margin-top: 4vw;
+    }
+    .img{
+        width: 20vw;
+        height: 20vw;
+        float: left;
+        margin-left: 10vw;
+        margin-top: 5vw;
+    }
+}
+/*For smartphone*/
+@media screen and (max-width: 480px){
+    .info-bg{
+        width: 90%;
+        height: 25vw;
+        margin-left: 5vw;
+    }
+    .info-topic{
+        font-size: 3vw;
+        margin-left: 5vw;
+        margin-top: 4vw;
+    }
+    .info{
+        font-size: 3vw;
+        margin-left: 2vw;
+        margin-top: 4vw;
+    }
+    .img{
+        width: 20vw;
+        height: 20vw;
+        float: left;
+        margin-left: 10vw;
+        margin-top: 5vw;
+    }
+}
+/* Media Query for Tablets Ipads*/ 
+@media (min-width: 481px) and (max-width: 1024px){
+.info-bg{
+    width: 90%;
+    height: 25vw;
+    margin-left: 5vw;
+}
+.info-topic{
     font-size: 3vw;
+    margin-left: 5vw;
     margin-top: 4vw;
-    margin-left: 3vw;
+}
+.info{
+    font-size: 3vw;
+    margin-left: 2vw;
+    margin-top: 4vw;
+}
+.img{
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
 }
